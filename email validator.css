@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,300&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    /* Use multiple font-family declarations for fallback */
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 90vw; /* Increased maximum width */
+    margin: auto;
+    padding: 15px 20px; /* Adjusted padding */
+}
+
+.container h1 {
+    padding: 20px 0; /* Increased padding */
+    font-size: 24px; /* Increased font size */
+    color: #333; /* Dark gray text color */
+}
+
+input[type='text'] {
+    min-width: 50vw; /* Increased minimum width */
+    padding: 12px 15px; /* Adjusted padding */
+    border: 2px solid #4CAF50; /* Green border color */
+    border-radius: 8px; /* Increased border radius */
+    font-size: 18px; /* Decreased font size */
+}
+
+.btn {
+    background: #4CAF50; /* Green background color */
+    color: #fff; /* White text color */
+    padding: 15px 20px; /* Adjusted padding */
+    border: 2px solid #4CAF50; /* Green border color */
+    border-radius: 10px; /* Increased border radius */
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #45a049; /* Darker green on hover */
+}
+
+#resultCont div::first-letter {
+    text-transform: uppercase;
+}
+
+footer {
+    font-size: 14px; /* Increased font size */
+    background-color: #333; /* Dark gray background color */
+    color: #fff; /* White text color */
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        font-size: 14px; /* Increased font size */
+    }
+
+    input[type='text'] {
+        width: 100%;
+    }
+}
